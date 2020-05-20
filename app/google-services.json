@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "64881448732",
+    "firebase_url": "https://propertymanagementappwithmvm.firebaseio.com",
+    "project_id": "propertymanagementappwithmvm",
+    "storage_bucket": "propertymanagementappwithmvm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64881448732:android:bbbf7a90a711644ee3ccd9",
+        "android_client_info": {
+          "package_name": "com.example.propertymanagementappwithmvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64881448732-r119sngf96k928dbpqj6er5kgusb5l7p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.propertymanagementappwithmvm",
+            "certificate_hash": "b8d08d83815ec8656d8688745cbc4f7b748eebba"
+          }
+        },
+        {
+          "client_id": "64881448732-djrchu4rt5o1ol49qcol7voe0eg5t722.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7J3tCSNLcPXVXvmDh9vDLOBMg6O23-NQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64881448732-djrchu4rt5o1ol49qcol7voe0eg5t722.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

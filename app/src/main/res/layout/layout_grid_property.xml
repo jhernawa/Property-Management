@@ -1,0 +1,110 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="property"
+            type="com.example.propertymanagementappwithmvm.models.Property" />
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="7dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="@color/colorTabBackround">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/text_view_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{property.propertyaddress}"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_view_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{property.propertycity}"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_view_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{property.propertystate}"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_view_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{property.propertycountry}"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_view_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{property.propertystatus}"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_view_purchase_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{property.propertypurchaseprice}"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_view_mortgage_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{property.propertymortageinfo}"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/image_view_delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_delete_black_24dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

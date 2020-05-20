@@ -1,0 +1,475 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="propertyAddViewModel"
+            type="com.example.propertymanagementappwithmvm.viewmodels.PropertyAddViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#26006064">
+
+            <!--step 1: Property Address-->
+            <TextView
+                android:id="@+id/text_view_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTabBackround"
+                android:text="Step 1: Property Address"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextNeon"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="10dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_view_subheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTabBackround"
+                android:text="@string/add_subheader"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextNeon"
+                android:textSize="15dp"
+                android:padding="10dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="#004D40"
+                    >
+
+                </TextView>
+
+
+                <EditText
+                    android:id="@+id/edit_text_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@={propertyAddViewModel.address}">
+
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="#004D40"></TextView>
+
+                <EditText
+                    android:id="@+id/edit_text_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@={propertyAddViewModel.city}">
+
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State/Province"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="#004D40"></TextView>
+
+                <EditText
+                    android:id="@+id/edit_text_state_or_province"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@={propertyAddViewModel.state_or_province}">
+
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zip/Postal Code"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="#004D40"></TextView>
+
+                <EditText
+                    android:id="@+id/edit_text_zip_or_postal_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@={propertyAddViewModel.zip_or_postal_code}">
+
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="#004D40"></TextView>
+
+                <EditText
+                    android:id="@+id/edit_text_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@={propertyAddViewModel.country}">
+
+
+                </EditText>
+
+            </LinearLayout>
+
+            <!--step 2: Property Details-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTabBackround"
+                android:padding="10dp"
+                android:text="Step 2: Property Details"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextNeon"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTabBackround"
+                android:text="@string/details_subheader"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextNeon"
+                android:textSize="15dp"
+                android:padding="10dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textAllCaps="false"
+                    android:textColor="#004D40"
+                    android:textSize="17dp"
+                    android:textStyle="bold"></TextView>
+
+
+                <EditText
+                    android:id="@+id/edit_text_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@={propertyAddViewModel.status}">
+
+                </EditText>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are there multiple units?"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="#004D40">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_multiple_units"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:onClick="@{propertyAddViewModel::isCheckBox}">
+
+                    </CheckBox>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purchase Price ($)"
+                    android:textAllCaps="false"
+                    android:textColor="#004D40"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:padding="5dp"></TextView>
+
+                <EditText
+                    android:id="@+id/edit_text_purchase_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@={propertyAddViewModel.purchase_price}">
+
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exclude from DashBoard?"
+                        android:textAllCaps="false"
+                        android:textColor="#004D40"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/exclude_from_dashboard"
+                        android:textAllCaps="false"
+                        android:textColor="#004D40"
+                        android:textSize="15dp"
+                        android:textStyle="italic"></TextView>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_exclude_from_dashboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:onClick="@{propertyAddViewModel::isCheckBox}">
+
+                    </CheckBox>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/button_add_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add a photo of your property"
+                android:drawableLeft="@drawable/ic_add_a_photo_black_24dp"
+                android:paddingLeft="15dp"
+                android:textAllCaps="false"
+                android:background="@drawable/background_button_screens"
+                android:onClick="@{propertyAddViewModel::onClickCamera}">
+
+            </Button>
+
+            <!-- step 3: Mortgage Information -->
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/image_view"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTabBackround"
+                android:text="Step 3: Mortgage Information"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextNeon"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="10dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTabBackround"
+                android:text="@string/mortgate_subheader"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextNeon"
+                android:textSize="15dp"
+                android:padding="10dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#26006064"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Does this property have a mortgage?"
+                    android:textAllCaps="false"
+                    android:textColor="#004D40"
+                    android:textSize="17dp"
+                    android:textStyle="bold"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_mortgage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:onClick="@{propertyAddViewModel::isCheckBox}">
+
+                    </CheckBox>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/button_add_property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_splash_screen"
+                android:onClick="@{propertyAddViewModel::addProperty}"
+                android:text="Add Property"
+                android:textAllCaps="false">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</layout>

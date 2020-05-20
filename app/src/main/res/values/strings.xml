@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PropertyManagementAppWithMVM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Property Screen -->
+    <string name="add_subheader">Enter the rental property\'s address below. The address is used to label each property, and to make it easier to log trips</string>
+    <string name="details_subheader">"Next we'd like some basic information about the property. If you input the Purchase Price then we can calculate you Property's Cash on Cash Invested % correctly"</string>
+    <string name="exclude_from_dashboard">"If excluded, this property won't be included in the main dashboard's financial totals and charts" </string>
+    <string name="mortgate_subheader">If your property has a mortgage,
+        then inputting its mortgage terms enables RentPal
+        to automatically set the principal,
+        interest, and escrow amounts when you
+        log mortgage payment transactions.
+        If you made extra principal payments,
+        then logging them as mortgage principal
+        transactions will update the amortizations schedule"</string>
+</resources>
